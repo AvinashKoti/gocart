@@ -6,6 +6,7 @@ COPY requirements.txt /app/
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install Pillow
+RUN pip install psycopg2
 COPY . .
 #RUN python manage.py migrate
 EXPOSE 8000
